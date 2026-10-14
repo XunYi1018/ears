@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# build output
+apps/injector/dist/
+
+# large derived data (rebuild with the scripts in apps/sidecar/ears/store)
+data/ecdict/stardict.db
+data/ecdict/ears_dict.db
+data/ecdict/*.zip
+data/ecdict/*.7z
+
+# local run artifacts: signed CDN urls, cookies, screenshots of a logged-in client
+recon/out/
+*.log
+
+# third-party dictionary source (see README for the download)
+data/ecdict/lemma.en.txt
